@@ -1,10 +1,10 @@
 # HLW8012-Driver
 
-#Description
+## Description
 This is a driver for the hlw8012 powermeter module. It uses the iio subsystem of the linux kernel.
 This can be used on for example a rasperry pi, or any other microcontroller
 
-#Usage
+## Usage
 Include the source file in your kernel environment and build the module for your system. In your device-tree-file you
 have to define three pins:
 
@@ -17,8 +17,9 @@ to the proper pins as defined in your DTS-File. Load the module (or autoload it)
 
 The driver opens three channels for you to get data from. Voltage, current and power. Using this is straight forward.
 
-#DTS-File
+## DTS-File
 An example of a DTS-File could look like this (here for AT91SAM9G25):
+
 
 ```
 ...
@@ -35,7 +36,7 @@ hlw8012@0 {
 
 If you don't use DTS-Files, you will need to allocate the proper gpios in the kernel on your own.
 
-#Author
+## Author
 Felix Froehling <felix.froehling1@gmail.com>
 
 
