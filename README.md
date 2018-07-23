@@ -8,9 +8,9 @@ This can be used on any microcontroller.
 Include the source file in your kernel environment and build the module for your system. In your device-tree-file you
 have to define three pins:
 
-gpio_sel - this is for selection of the output either being current oder voltage \\
-gpio_cf1 - this is the data pin for current or voltage depending on the sel-pin \\
-gpio_cf - this is a pin for the active power data \\
+gpio_sel - this is for selection of the output either being current oder voltage  
+gpio_cf1 - this is the data pin for current or voltage depending on the sel-pin  
+gpio_cf - this is a pin for the active power data  
 
 Insert these names in you DTS-File, compile it and flash it to your MC. Obviously you have to connect the module
 to the proper pins as defined in your DTS-File. Load the module (or autoload it) on your system. 
