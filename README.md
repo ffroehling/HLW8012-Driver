@@ -2,7 +2,7 @@
 
 ## Description
 This is a driver for the hlw8012 powermeter module. It uses the iio subsystem of the linux kernel.
-This can be used on any microcontroller.
+The driver can be used on any microcontroller.
 
 ## Usage
 Include the source file in your kernel environment and build the module for your system. In your device-tree-file you
